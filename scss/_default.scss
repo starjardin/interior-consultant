@@ -1,0 +1,31 @@
+@import "_variables";
+
+body {
+  background-color : #181719;
+  color : $textColor;
+  padding: 1rem;
+}
+
+.profile {
+  background-color: black;
+  position: absolute;
+  @include flex-row;
+  bottom: -5%;
+  right: 5%;
+  max-width: 410px;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+@media (min-width : 720px) {
+  .article {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    gap : 1rem;
+    position: relative;
+  }
+}
