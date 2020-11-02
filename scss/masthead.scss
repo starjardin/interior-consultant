@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables.scss";
 
 .masthead__heading {
   font-family: Lora;
@@ -6,6 +6,7 @@
   font-weight: normal;
   font-size: 48px;
   line-height: 61px;
+  margin : 0;
 }
 
 .masthead__anchor,
@@ -28,8 +29,8 @@
   color: #ffffff;
   text-decoration: none;
   line-height: 22px;
-  background-image: url(../../assets/arrow.svg);
-  background-position : 23% center;
+  background-image: url(../assets/arrow.svg);
+  background-position : 117px center;
   background-repeat: no-repeat;
   background-size: contain;
 }

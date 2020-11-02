@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+body {
+  background-color : #181719;
+  color : $textColor;
+  padding: 1rem;
+}
+
+.article {
+  padding-block : 20%;
+}
+
+.article__pictures {
+  position : relative;
+  font-family : Lora;
+}
+
+.picture__profile {
+  background-color: #181719;
+  position: absolute;
+  @include flex-row;
+  bottom: -36%;
+  right: 5%;
+  width : calc(100% * 300 / 390);
+  height : calc(100% * 138 / 279);
+  padding : 1rem;
+}
+
+.picture__profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+@media (min-width : 720px) {
+  .article {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    gap : 1rem;
+    position: relative;
+  }
+
+  .picture__profile {
+    width : calc(100% * 410 / 821);
+  }
+}
