@@ -16,11 +16,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  bottom: -36%;
+  bottom: -20%;
   right: 5%;
   width: calc(100% * 300 / 390);
-  height: calc(100% * 138 / 279);
-  padding: 1rem; }
+  padding: 1rem;
+  box-shadow: 2px 2px 1px #111111;
+  padding-bottom: 2rem; }
 
 .picture__profile img {
   width: 60px;
