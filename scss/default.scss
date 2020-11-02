@@ -7,7 +7,7 @@ body {
 }
 
 .article {
-  padding-block : 20%;
+  padding-top : 20%;
 }
 
 .article__pictures {
@@ -30,6 +30,16 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+a {
+  transition: .3s;
+}
+
+a:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px #c2c1c1;
+  padding: .5rem;
 }
 
 @media (min-width : 720px) {
