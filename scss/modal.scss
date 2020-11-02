@@ -66,10 +66,11 @@ input {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: $min-width-media) {
   .nav__menu {
     @include reset-nav;
     display: block;
+    max-width : 700px;
   }
 
   .nav > .header__label,

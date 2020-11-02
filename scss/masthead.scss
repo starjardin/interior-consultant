@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+.masthead__container {
+  max-width: 410px;
+}
+
 .masthead__heading {
   font-family: Lora;
   font-style: normal;
@@ -34,4 +38,5 @@
   background-position : 117px center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-block  : 2rem;
 }

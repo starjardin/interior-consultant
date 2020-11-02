@@ -1,10 +1,12 @@
 body {
   background-color: #181719;
   color: #ffffff;
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 1440px;
+  margin: auto; }
 
 .article {
-  padding-top: 20%; }
+  padding-top: 15%; }
 
 .article__pictures {
   position: relative;
@@ -13,9 +15,6 @@ body {
 .picture__profile {
   background-color: #181719;
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   bottom: -20%;
   right: 5%;
   width: calc(100% * 300 / 390);
@@ -28,6 +27,14 @@ body {
   height: 60px;
   border-radius: 50%; }
 
+.profile__photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.profile__paragraph {
+  padding-inline-start: 2rem; }
+
 a {
   transition: .3s; }
 
@@ -36,14 +43,15 @@ a:hover {
   box-shadow: 1px 1px 5px #c2c1c1;
   padding: .5rem; }
 
-@media (min-width: 720px) {
+@media (min-width: 760px) {
   .article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     position: relative; }
   .picture__profile {
-    width: calc(100% * 410 / 821); } }
+    width: calc(100% * 410 / 821);
+    box-shadow: none; } }
 
 .header__heading {
   margin: 0;
@@ -61,11 +69,15 @@ a:hover {
 .header__conatiner {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   justify-content: space-between; }
 
-@media (min-width: 720px) {
+@media (min-width: 760px) {
   .header__conatiner {
     align-items: center; } }
+
+.masthead__container {
+  max-width: 410px; }
 
 .masthead__heading {
   font-family: Lora;
@@ -98,7 +110,8 @@ a:hover {
   background-image: url(/arrow.ade7741f.svg);
   background-position: 117px center;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  margin-block: 2rem; }
 
 img {
   width: 100%;
@@ -167,9 +180,10 @@ input {
       display: block;
       padding-block: 16px; }
 
-@media (min-width: 720px) {
+@media (min-width: 760px) {
   .nav__menu {
-    display: block; }
+    display: block;
+    max-width: 700px; }
     .nav__menu ul {
       display: flex;
       flex-direction: row;
@@ -205,13 +219,13 @@ input {
   width: calc(100% * 300 / 390);
   margin-inline: auto; }
 
-@media (min-width: 720px) {
+@media (min-width: 760px) {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: none;
     margin: 0;
-    padding-top: 20%; }
+    padding-top: 10rem; }
   .footer__paragraph {
     grid-column: 2/3; } }
 
